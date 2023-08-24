@@ -4,6 +4,7 @@ describe('Main functionalities test', () => {
   
   it('Should go to main page', () => {
     cy.visit('http://127.0.0.1:5173/')
+    cy.contains('h1', 'todos').should('be.visible');
   });
 
   
